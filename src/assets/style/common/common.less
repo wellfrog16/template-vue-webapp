@@ -1,0 +1,110 @@
+@import '../usr/index.config.less';
+
+// ------------------------------------全局样式-----------------------------------------
+// fontawesome
+.menu-fix-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+    // font-weight: 400;
+    line-height: 1;
+}
+
+.button-fix-icon {
+    margin-right: 5px;
+}
+
+// 公共样式
+.fullsize {
+    width: 100%;
+    height: 100%;
+}
+
+.abs-fullsize {
+    .fullsize;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rel-fullsize {
+    .fullsize;
+
+    position: relative;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.color-primary {
+    color: @g-color-primary;
+}
+
+// 主框架padding
+.main-wrapper {
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-important {
+    img {
+        width: 100% !important;
+        height: initial !important;
+    }
+
+    // 强制编辑器输出样式
+    div, p, span {
+        width: initial !important;
+        line-height: 1.8em !important;
+        font-family: @g-font-family !important;
+        font-size: @g-font-size !important;
+        color: @g-color2 !important;
+        text-align: left !important;
+    }
+}
+
+.gutter() {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gutter.gutter-vertical {
+    .gutter();
+
+    cursor: row-resize;
+    background-image: url('../../img/common/icon/split/horizontal.png');
+}
+
+.gutter.gutter-horizontal {
+    .gutter();
+
+    cursor: col-resize;
+    background-image: url('../../img/common/icon/split/vertical.png');
+}
