@@ -13,16 +13,6 @@ const config = {
                 image: 'localhost:8080',
             },
         },
-        {
-            id: 2,
-            name: '本地服务器2 - localhost',
-            server: {
-                api: 'localhost:8080',
-                easyMock: 'https://easy-mock.com/mock/5d2f616fef6cae58e9f2d26f/template',
-                upload: 'localhost:8080',
-                image: 'localhost:8080',
-            },
-        },
     ],
 };
 

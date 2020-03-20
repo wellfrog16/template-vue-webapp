@@ -4,7 +4,6 @@ import { utils } from '@/utils/rivers';
 
 // 站点模块
 import security from './modules/security';
-import research from './modules/research';
 
 Vue.use(Vuex);
 
@@ -35,6 +34,5 @@ export default new Vuex.Store({
     },
     modules: {
         security,
-        research,
     },
 });

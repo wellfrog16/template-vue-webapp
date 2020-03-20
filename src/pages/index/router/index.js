@@ -3,10 +3,7 @@ import Router from 'vue-router';
 import Login from '#index/views/login/Index.vue';
 
 // 路由模块
-import routeResearch from './modules/research';
-import routeDocument from './modules/document';
 import routeHome from './modules/home';
-import routeSecurity from './modules/security';
 
 Vue.use(Router);
 
@@ -44,9 +41,6 @@ const staticRoutes = [
 ];
 
 const asyncRoutes = [
-    routeDocument,
-    routeResearch,
-    routeSecurity,
 ];
 
 const scrollBehavior = (to, from, savedPosition) => {
