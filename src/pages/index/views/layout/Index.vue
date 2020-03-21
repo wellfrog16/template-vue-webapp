@@ -1,5 +1,5 @@
 <template>
-    <div :class="$style.main">
+    <div>
         <!-- <x-header />
         <x-breadcrumb /> -->
         <router-view />
@@ -22,7 +22,4 @@ export default {
 </script>
 
 <style lang="less" module>
-.main {
-    padding-top: 72px;
-}
 </style>

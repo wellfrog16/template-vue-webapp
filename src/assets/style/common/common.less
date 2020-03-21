@@ -1,21 +1,6 @@
 @import '../usr/index.config.less';
 
 // ------------------------------------全局样式-----------------------------------------
-// fontawesome
-.menu-fix-icon {
-    vertical-align: middle;
-    margin-right: 5px;
-    width: 24px;
-    text-align: center;
-    font-size: 18px;
-    // font-weight: 400;
-    line-height: 1;
-}
-
-.button-fix-icon {
-    margin-right: 5px;
-}
-
 // 公共样式
 .fullsize {
     width: 100%;
@@ -66,7 +51,7 @@
 
 // 主框架padding
 .main-wrapper {
-    padding: 20px;
+    padding: 0;
     box-sizing: border-box;
     flex-grow: 1;
     display: flex;
@@ -88,23 +73,4 @@
         color: @g-color2 !important;
         text-align: left !important;
     }
-}
-
-.gutter() {
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.gutter.gutter-vertical {
-    .gutter();
-
-    cursor: row-resize;
-    background-image: url('../../img/common/icon/split/horizontal.png');
-}
-
-.gutter.gutter-horizontal {
-    .gutter();
-
-    cursor: col-resize;
-    background-image: url('../../img/common/icon/split/vertical.png');
 }

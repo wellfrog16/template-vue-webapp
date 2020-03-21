@@ -61,7 +61,7 @@ module.exports = {
             postcss: {
                 plugins: [
                     require('postcss-pxtorem') ({ // eslint-disable-line
-                        rootValue: 36, // 设计稿1rem = 36px
+                        rootValue: 37.5, // 设计稿1rem = 37.5px
                         minPixelValue: 4,
                         selectorBlackList: ['px'], // 忽略转换正则匹配项
                         propList: ['*'],
